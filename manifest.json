@@ -1,0 +1,13 @@
+{
+  "name": "bz-monospace-font",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Show comments with Monospace font in Bugzilla.",
+  "content_scripts": [
+    {
+      "matches": ["https://bugzilla.redhat.com/*"],
+      "all_frames": true,
+      "css": ["monospace.css"]
+    }
+  ]
+}
